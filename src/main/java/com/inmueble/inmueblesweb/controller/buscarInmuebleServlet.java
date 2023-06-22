@@ -20,8 +20,8 @@ public class buscarInmuebleServlet extends HttpServlet {
 	}
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String ciudad=request.getAttribute("ciudad").toString();
-		String direccion=request.getAttribute("direccion").toString();
+		String ciudad=request.getParameter("ciudad").toString();
+		String direccion=request.getParameter("direccion").toString();
 		RequestDispatcher requestDispatcher=request.getRequestDispatcher("/buscarInmueble.jsp");
 		if(!ciudad.isEmpty() && !direccion.isEmpty()){
 			Inmueble inmueble=new Inmueble("",0,new UbicacionGeografica(

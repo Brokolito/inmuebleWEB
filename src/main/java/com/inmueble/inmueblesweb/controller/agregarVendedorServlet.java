@@ -17,12 +17,12 @@ public class agregarVendedorServlet extends HttpServlet {
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 		String rut=(
-				(!request.getAttribute("rut").toString().isEmpty() &&
-						request.getAttribute("rut").toString().length()<=12)
-						?request.getAttribute("rut").toString():"0");
+				(!request.getParameter("rut").toString().isEmpty() &&
+						request.getParameter("rut").toString().length()<=12)
+						?request.getParameter("rut").toString():"0");
 		String nombre=request.getParameter("nombre").toString();
-		String estadoCivil=request.getAttribute("estadoCivil").toString();
-		String direccion=request.getAttribute("direccion").toString();
-
+		String estadoCivil=request.getParameter("estadoCivil").toString();
+		String direccion=request.getParameter("direccion").toString();
+		String tituloProfesional= request.getParameter("tituloProfesional").toString();
 	}
 }

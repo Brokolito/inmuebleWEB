@@ -28,8 +28,8 @@ public class agregarInmuebleServlet extends HttpServlet {
 						?"0":request.getParameter("precio").toString()
 		);
 		RequestDispatcher requestDispatcher=request.getRequestDispatcher("/agregarInmueble.jsp");
-		String direccion=request.getAttribute("direccion").toString();
-		String ciudad=request.getAttribute("ciudad").toString();
+		String direccion=request.getParameter("direccion").toString();
+		String ciudad=request.getParameter("ciudad").toString();
 		if(!construccion.isEmpty() && precio!=0 && !ciudad.isEmpty() && !direccion.isEmpty()){
 			Inmueble inmueble=new Inmueble(construccion,precio,new UbicacionGeografica(ciudad,direccion));
 			if(inmueble.agregarInmueble()){

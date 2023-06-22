@@ -1,4 +1,4 @@
-package dao;
+package com.inmueble.inmueblesweb.model.data.dao;
 
 import model.UbicacionGeografica;
 import model.Inmueble;

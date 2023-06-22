@@ -1,4 +1,4 @@
-package model;
+package com.inmueble.inmueblesweb.model;
 
 public class Inmueble {
 	private String construccion;

@@ -1,4 +1,4 @@
-package controller;
+package com.inmueble.inmueblesweb.controller;
 
 public class agregarVendedorServlet {
 

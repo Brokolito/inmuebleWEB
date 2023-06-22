@@ -2,12 +2,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>Gestor de inmuebles</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1><%= "Hello World!" %>
-</h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
+<main>
+    <article>
+        <section class="pp-title">
+            <h1>Gestor de Inmuebles</h1>
+            <a href="agregarInmueble.jsp">Agregar Inmueble</a>
+            <a href="agregarVendedor.jsp">Agregar Vendedor</a>
+            <a href="buscarInmueble.jsp">Buscar Inmueble</a>
+
+        </section>
+    </article>
+</main>
 </body>
-</html>

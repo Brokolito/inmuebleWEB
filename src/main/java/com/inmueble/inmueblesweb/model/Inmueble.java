@@ -1,5 +1,11 @@
 package com.inmueble.inmueblesweb.model;
 
+import com.inmueble.inmueblesweb.model.data.DBConnector;
+import com.inmueble.inmueblesweb.model.data.dao.inmuebleDAO;
+import org.jooq.DSLContext;
+import org.jooq.impl.DSL;
+
+import java.sql.Connection;
 import java.util.ArrayList;
 
 public class Inmueble {
@@ -28,7 +34,9 @@ public class Inmueble {
 	}
 
 	public boolean agregarInmueble() {
-		throw new UnsupportedOperationException();
+		Connection connection= DBConnector.connection("inmueble","root","");
+		DSLContext query= DSL.using(connection);
+		return new inmuebleDAO().agregarInmueble(this,query);
 	}
 
 	public UbicacionGeografica getUbicacionGeografica() {
@@ -36,6 +44,8 @@ public class Inmueble {
 	}
 
 	public ArrayList<Inmueble> buscarInmueble() {
-		throw new UnsupportedOperationException();
+		Connection connection= DBConnector.connection("inmueble","root","");
+		DSLContext query= DSL.using(connection);
+		return new inmuebleDAO().buscarInmueble(this,query);
 	}
 }

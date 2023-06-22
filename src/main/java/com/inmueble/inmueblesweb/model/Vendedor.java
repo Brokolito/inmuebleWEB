@@ -1,5 +1,12 @@
 package com.inmueble.inmueblesweb.model;
 
+import com.inmueble.inmueblesweb.model.data.DBConnector;
+import com.inmueble.inmueblesweb.model.data.dao.vendedorDAO;
+import org.jooq.DSLContext;
+import org.jooq.impl.DSL;
+
+import java.sql.Connection;
+
 public class Vendedor {
 	private String rut;
 	private String estadoCivil;
@@ -52,6 +59,8 @@ public class Vendedor {
 	}
 
 	public boolean agregarVendedor() {
-		throw new UnsupportedOperationException();
+		Connection connection= DBConnector.connection("inmueble","root","");
+		DSLContext query= DSL.using(connection);
+		return new vendedorDAO().agregarVendedor(this,query);
 	}
 }

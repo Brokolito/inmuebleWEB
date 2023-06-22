@@ -10,6 +10,7 @@
 <html>
 <head>
     <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <main>
@@ -18,6 +19,7 @@
         <form action="/buscarInmueble" method="post">
             <input name="direccion" placeholder="Direccion" type="text" required>
             <input name="ciudad" placeholder="Ciudad" type="text" required>
+            <button type="submit">Buscar</button>
         </form>
     </section>
     <section class="r-busqueda">

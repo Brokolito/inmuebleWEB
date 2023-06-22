@@ -14,11 +14,12 @@ public class Vendedor {
 	private String direccion;
 	private String tituloProfesional;
 
-	public Vendedor(String rut, String estadoCivil, String direccion, String tituloProfesional) {
+	public Vendedor(String rut, String nombre,String estadoCivil, String direccion, String tituloProfesional) {
 		this.rut=rut;
 		this.estadoCivil=estadoCivil;
 		this.direccion=direccion;
 		this.tituloProfesional=tituloProfesional;
+		this.nombre=nombre;
 	}
 
 	public String getRut() {

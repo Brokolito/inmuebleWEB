@@ -31,6 +31,8 @@
                 <input name="tituloProfesional" placeholder="Titulo profesional" type="text" required>
                 <button type="submit">Agregar</button>
             </form>
+            <a href="index.jsp">Volver</a>
+
         </section>
     </article>
 </main>

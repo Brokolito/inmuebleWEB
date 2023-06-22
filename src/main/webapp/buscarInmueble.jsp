@@ -21,6 +21,8 @@
             <input name="ciudad" placeholder="Ciudad" type="text" required>
             <button type="submit">Buscar</button>
         </form>
+        <a href="index.jsp">Volver</a>
+
     </section>
     <section class="r-busqueda">
         <table>

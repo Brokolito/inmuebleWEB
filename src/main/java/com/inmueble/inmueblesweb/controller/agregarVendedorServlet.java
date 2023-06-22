@@ -13,11 +13,8 @@ import java.io.IOException;
 @WebServlet(name = "agregarVendedorServlet",value = "/agregarVendedor")
 public class agregarVendedorServlet extends HttpServlet {
 
-	public void doGet(HttpServletRequest request, HttpServletResponse response) {
-		throw new UnsupportedOperationException();
-	}
-
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+		System.out.println("a");
 		String rut=(
 				(!request.getParameter("rut").toString().isEmpty() &&
 						request.getParameter("rut").toString().length()<=12)

@@ -1,3 +1,35 @@
+.pp-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ajusta la altura según tus necesidades */
+    text-align: center;
+    display:flex;
+    flex-direction:column;
+}
+.pp-title h1{
+    font-size:100px
+}
+.formulario{
+    width:90%;
+    margin:auto;
+    padding-top:20%;
+    display:flex;
+    flex-direction:column;
+;
+    align-items:center;
+    gap:5px;
+}
+.formulario form{
+    margin:auto;
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    gap:10px
+}
+.formulario a{
+    margin:auto;
+}
 .r-busqueda table{
     text-align:center;
     width:80%;

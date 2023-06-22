@@ -30,6 +30,8 @@
                 <input name="direccion" placeholder="Direccion" type="text">
                 <button type="submit">Agregar</button>
             </form>
+            <a href="index.jsp">Volver</a>
+
         </section>
     </article>
 </main>

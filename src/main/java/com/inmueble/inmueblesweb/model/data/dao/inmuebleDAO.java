@@ -21,7 +21,7 @@ public class inmuebleDAO {
 		return result==1;
 	}
 
-	public boolean buscarInmueble(Inmueble inmueble, DSLContext query) {
+	public ArrayList<Inmueble> buscarInmueble(Inmueble inmueble, DSLContext query) {
 		String ubicacionGeografica=inmueble.getUbicacionGeografica().getDireccion()+"-"+inmueble.getUbicacionGeografica().getCiudad();
 		Result <Record> result=query.select().from(DSL.table("inmueble")).where(
 				DSL.field("direccion").eq(ubicacionGeografica)).fetch();
@@ -33,11 +33,10 @@ public class inmuebleDAO {
 			inmuebles.add(new Inmueble(
 					result.getValue(i,"construccion").toString(),
 					Integer.parseInt(result.getValue(i,"precio").toString()),
+					ubicacionGeografica1
 			));
 		}
+		return inmuebles;
 	}
 
-	public ArrayList<UbicacionGeografica> obtenerCiudadInmueble(Inmueble inmueble, DSLContext query) {
-		throw new UnsupportedOperationException();
-	}
 }

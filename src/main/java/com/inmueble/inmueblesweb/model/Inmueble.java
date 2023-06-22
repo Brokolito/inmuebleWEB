@@ -14,7 +14,9 @@ public class Inmueble {
 	private UbicacionGeografica ubicacionGeografica;
 
 	public Inmueble(String construccion, int precio, UbicacionGeografica ubicacionGeografica) {
-		throw new UnsupportedOperationException();
+		this.construccion=construccion;
+		this.precio=precio;
+		this.ubicacionGeografica=ubicacionGeografica;
 	}
 
 	public String getConstruccion() {

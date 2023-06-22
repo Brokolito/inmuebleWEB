@@ -15,7 +15,10 @@ public class Vendedor {
 	private String tituloProfesional;
 
 	public Vendedor(String rut, String estadoCivil, String direccion, String tituloProfesional) {
-		throw new UnsupportedOperationException();
+		this.rut=rut;
+		this.estadoCivil=estadoCivil;
+		this.direccion=direccion;
+		this.tituloProfesional=tituloProfesional;
 	}
 
 	public String getRut() {

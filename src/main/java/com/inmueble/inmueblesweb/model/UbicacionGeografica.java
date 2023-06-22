@@ -5,6 +5,8 @@ public class UbicacionGeografica {
 	private String direccion;
 
 	public UbicacionGeografica(String ciudad, String direccion) {
+		this.ciudad=ciudad;
+		this.direccion=direccion;
 	}
 
 	public String getCiudad() {

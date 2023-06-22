@@ -1,5 +1,8 @@
 package com.inmueble.inmueblesweb.controller;
 
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
 public class agregarInmuebleServlet {
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response) {

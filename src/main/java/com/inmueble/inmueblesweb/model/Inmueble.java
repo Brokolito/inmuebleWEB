@@ -1,5 +1,7 @@
 package com.inmueble.inmueblesweb.model;
 
+import java.util.ArrayList;
+
 public class Inmueble {
 	private String construccion;
 	private int precio;
@@ -27,6 +29,10 @@ public class Inmueble {
 
 	public boolean agregarInmueble() {
 		throw new UnsupportedOperationException();
+	}
+
+	public UbicacionGeografica getUbicacionGeografica() {
+		return ubicacionGeografica;
 	}
 
 	public ArrayList<Inmueble> buscarInmueble() {
